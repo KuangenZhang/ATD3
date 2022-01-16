@@ -12,6 +12,12 @@ def test_env(env):
     while True:
         env.render()
 
+def convert_args_to_bool(args):
+    args.eval_only = (args.eval_only in ['True', True])
+    args.render = (args.render in ['True', True])
+    args.save_video = (args.save_video in ['True', True])
+    args.save_all_policy = (args.save_all_policy in ['True', True])
+    return args
 
 def main(args):
     env = gym.make(args.env_name)
@@ -36,7 +42,6 @@ if __name__ == "__main__":
     parser.add_argument("--save_video", default=False)
     parser.add_argument("--save_all_policy", default=False)
     parser.add_argument("--load_policy_idx", default='')
-    parser.add_argument("--evaluate_Q_value", default=False)
     parser.add_argument("--reward_name", default='')
     parser.add_argument("--seq_len", default=2, type=int)
     parser.add_argument("--option_num", default=4, type=int)
@@ -60,5 +65,6 @@ if __name__ == "__main__":
     parser.add_argument("--policy_freq", default=2, type=int)  # Frequency of delayed policy updates
 
     args = parser.parse_args()
+    args = convert_args_to_bool(args)
     main(args)
 

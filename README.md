@@ -16,7 +16,7 @@ python code/main.py
 
 ### Train
 ```
-python code/main.py --eval_only False
+python code/main.py --eval_only False --render False
 ```
 
 ## Contact
