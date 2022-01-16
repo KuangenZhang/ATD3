@@ -1,6 +1,7 @@
 # Teach biped robots to walk via gait principles and reinforcement learning with adversarial critics
 
 This is the implementation of Teach biped robots to walk via gait principles and reinforcement learning with adversarial critics in Pytorch.
+Because Roboschool has deprecated, we have changed the simulator to Pybullet.
 
 ## Getting Started
 ### Installation
