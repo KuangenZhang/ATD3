@@ -28,16 +28,13 @@ Further information please contact Kuangen Zhang (kuangen.zhang@alumni.ubc.ca).
 If you find our work useful in your research, please consider citing:
 
 ```bash
-@article{zhang_gaussian-guided_2022,
-	title = {Gaussian-guided feature alignment for unsupervised cross-subject adaptation},
-	volume = {122},
-	issn = {0031-3203},
-	language = {en},
-	urldate = {2021-10-18},
-	journal = {Pattern Recognition},
-	author = {Zhang, Kuangen and Chen, Jiahong and Wang, Jing and Leng, Yuquan and de Silva, Clarence W. and Fu, Chenglong},
-	month = feb,
-	year = {2022},
-	pages = {108332},
+@article{zhang_teach_2019,
+	title = {Teach biped robots to walk via gait principles and reinforcement learning with adversarial critics},
+	urldate = {2020-07-10},
+	journal = {arXiv:1910.10194 [cs]},
+	author = {Zhang, Kuangen and Hou, Zhimin and de Silva, Clarence W. and Yu, Haoyong and Fu, Chenglong},
+	month = oct,
+	year = {2019},
 }
+
 ```
